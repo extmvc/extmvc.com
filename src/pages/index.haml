@@ -1,0 +1,23 @@
+%h2.page-heading.intro
+  Ext MVC is an 
+  = link 'Ext JS', 'http://extjs.com'
+  library which makes building Ext JS applications quick and easy
+
+%object#video{:width => 900, :height => 600}
+  %param{:name => 'allowfullscreen',   :value => 'true'}
+  %param{:name => 'allowscriptaccess', :value => 'true'}
+  %param{:name => 'movie',             :value => "http://vimeo.com/moogaloop.swf?clip_id=2982056&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1"}
+  %embed{:src =>  "http://vimeo.com/moogaloop.swf?clip_id=2982056&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1", :allowfullscreen => 'true', :allowscriptaccess => 'always', :width => 900, :height => 600}
+
+.grid_12{:style => 'margin-top: 15px;'}
+  #kwick-box.box
+    #kwick
+      %ul.kwicks
+        %li
+          %a.kwick.one{:href => '/get-started'} Get Started
+        %li
+          %a.kwick.two{:href => '/tutorials'} Tutorials
+        %li
+          %a.kwick.three{:href => '/samples'} Samples and Demos
+        %li
+          %a.kwick.four{:href => '/downloads'} Downloads

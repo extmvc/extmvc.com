@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title Ext MVC - Ruby on Rails in the browser
+    = stylesheets :reset, :text, '960', :layout, :nav, :application
+  %body
+    %div.container_12
+      %div.grid_12
+        %h1#branding= link 'Ext MVC - Ruby on Rails for ExtJS', '/'
+      .clear
+      
+      %div.grid_12
+        %ul.nav.main
+          %li= link 'Home', '/'
+          %li= link 'API', 'http://api.extmvc.com'
+          %li= link 'Samples', '/samples'
+          %li= link 'Get Started', '/get-started'
+          %li= link 'Tutorials', '/tutorials'
+          %li= link 'About', '/about'
+      .clear
+      %div.grid_12
+        = yield
+      .clear
+    %script{:type => "text/javascript"}
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{:type => "text/javascript"}
+      try {
+      var pageTracker = _gat._getTracker("UA-4113660-3");
+      pageTracker._trackPageview();
+      } catch(err) {}
